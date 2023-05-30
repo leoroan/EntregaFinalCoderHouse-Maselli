@@ -1,0 +1,161 @@
+/* Medias */
+
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    overflow: visible;
+  }
+
+  #pag2 p {
+    font-size: 1rem !important;
+  }
+
+  .laapp,
+  .acercade,
+  .mascosas,
+  .contacto {
+    /* border: 2px solid red; */
+    height: 100%;
+  }
+
+  .grid_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section .grid_container {
+    height: auto;
+
+    .grid-item {
+      grid-column: 1;
+
+      img {
+        width: 100%;
+        height: auto;
+        padding-top: 100%;
+      }
+    }
+  }
+
+  nav {
+    margin: 5px;
+    /* text-align: center; */
+    background-color: rgba(75, 200, 209, 0.521);
+  }
+
+  nav a {
+    font-size: 95% !important;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+  }
+
+  .banner h1 {
+    font-size: 55px !important;
+    color: rgb(86, 168, 86);
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: -1px;
+    align-self: center;
+  }
+
+  .foto {
+    display: none;
+  }
+
+  .foot h2 {
+    font-size: 60% !important;
+    text-align: left;
+  }
+
+  .bi-cloud-arrow-up-fill {
+    font-size: 250% !important;
+    color: rgb(161, 94, 39) !important;
+  }
+
+  section>a>img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-form {
+    width: 100% !important;
+  }
+
+  .sub {
+    font-size: 20px !important;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .foto {
+    display: block;
+  }
+
+  .banner {
+    h1 {
+      font-size: 75px !important;
+      text-shadow: 1px 1px 2px black, 1px 1px 2px black;
+      letter-spacing: -1px;
+      align-self: center;
+    }
+  }
+
+  html {
+    section {
+      a {
+        img {
+          height: 100% !important;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  section .grid_container {
+    height: auto;
+
+    .grid-item {
+      // grid-column: 1;
+      // height: 50%;
+      img {
+        width: 100%;
+        height: auto;
+        padding-top: 50%;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .grid_container {
+    // grid-template-columns: repeat(2, 1fr);
+    grid-column: 1fr;
+  }
+
+  section>a>img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bi-cloud-arrow-up-fill {
+    font-size: 5% !important;
+    color: rgb(39, 143, 161) !important;
+  }
+
+  .foot {
+    // display: block;
+    position: fixed;
+    bottom: 0;
+  }
+}

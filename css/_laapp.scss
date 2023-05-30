@@ -1,0 +1,80 @@
+// La app
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  // border: 2px solid black;
+  padding: 30px;
+  height: 100%;
+
+  // Contenedor
+  .contenedor {
+    input {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+
+  .grid-item {
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    background-color: rgba(202, 150, 83, 0);
+    overflow: scroll;
+    margin: 1px 12px 1px 12px;
+    padding: 10px 25px 10px 25px;
+
+    h3 {
+      text-shadow: 2px 2px 4px #000, 2px 2px 4px #000, 2px 2px 4px #000;
+      font-size: 35px !important;
+      color: #ccbbbb;
+    }
+
+    p {
+      text-shadow: 2px 2px 4px #000, 2px 2px 4px #000, 2px 2px 4px #000;
+      font-size: 1.1rem !important;
+      color: #ccbbbb;
+      // width: 90%;
+      height: 90%;
+    }
+
+    // img {
+    //   margin-top: 10%;
+    //   width: 50%;
+    //   height: auto;
+    // }
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+
+  .grid-item-1 {
+    background-color: rgba(250, 235, 215, 0);
+    grid-column: 1 / span 2;
+    /* Ocupa 2 columnas */
+  }
+
+  .grid-item-2 {
+    background-color: rgba(250, 235, 215, 0);
+    grid-column: 3 / span 2;
+    /* Ocupa 2 columnas, comienza en la tercera columna */
+    background-image: url(../images/4404-removebg-preview.png);
+    background-size: contain;
+  }
+
+
+}
